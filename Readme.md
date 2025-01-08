@@ -1,7 +1,7 @@
-# Личный проект «{{Barbershop}}»
+# Личный проект «Barbershop»
 
-* Студент: [{{PalNikolai4}}]({{https://github.com/PalNikolai4}}).
-* Наставник: `Неизвестно`.
+* Студент: [PalNikolai4](https://github.com/PalNikolai4).
+* Наставник: `Вся Академия`.
 
 ---
 
