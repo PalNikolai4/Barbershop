@@ -43,7 +43,7 @@ html {
 }
 
 body {
-  width: 1020px;
+  /* width: 1020px; */
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -67,6 +67,9 @@ body {
 }
 
 .button {
+  display: inline-block;
+  padding: 14px 20px;
+  border: none;
   font-family: inherit;
   font-size: 16px;
   line-height: 16px;
@@ -76,11 +79,16 @@ body {
   background-color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button-light {
   color: #242424;
   background-color: #FFFFFF;
+}
+
+.button + .button {
+  margin-left: 12px;
 }
 
 .page-header {
@@ -214,6 +222,7 @@ body {
 }
 
 .services-title {
+  font-family: "PT Sans Narrow", sans-serif;
   margin: 0;
   margin-bottom: 28px;
   font-size: 32px;
@@ -222,9 +231,18 @@ body {
 }
 
 .services-list {
+  font-family: "PT Sans Narrow", sans-serif;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style-type: none;
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
+}
+
+.services-item:not(:last-of-type) {
+  margin-bottom: 22px;
 }
 
 .services-price {
@@ -238,6 +256,7 @@ body {
 .gallery-title {
   margin: 0;
   margin-bottom: 20px;
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 35px;
@@ -252,6 +271,7 @@ body {
 .contacts-title {
   margin: 0;
   margin-bottom: 24px;
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
   line-height: 35px;
   font-weight: 700;
@@ -259,22 +279,46 @@ body {
 }
 
 .contacts-subtitle {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 20px;
   line-height: 28px;
   text-transform: uppercase;
   color: #AF7842;
 }
 
+.contacts-subtitle:not(:first-of-type) {
+  margin-top: 22px;
+}
+
 .contacts-adress {
   font-style: normal;
 }
 
+.contacts-adress-text {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
 .contacts-phone {
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 24px;
   line-height: 29px;
   text-decoration-line: underline;
   text-transform: uppercase;
   color: #242424;
+}
+
+.contacts-shedule {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contacts-buttons {
+  margin-top: 21px;
+  margin-bottom: 0;
 }
 
 .appointment {
@@ -284,6 +328,7 @@ body {
 .appointment-title {
   margin: 0;
   margin-bottom: 20px;
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
   line-height: 35px;
   font-weight: 700;
@@ -349,11 +394,18 @@ body {
   margin-right: 130px;
 }
 
+.footer-contacts-logo {
+  display: block;
+  margin-bottom: 24px;
+}
+
 .footer-contacts-adress {
   font-style: normal;
 }
 
 .footer-contacts-adress p {
+  margin-top: 0;
+  margin-bottom: 4px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
@@ -370,6 +422,8 @@ body {
 }
 
 .footer-contacts-map-link {
+  display: block;
+  margin-top: 16px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -406,6 +460,7 @@ body {
 .page-footer-title {
   margin-top: 0;
   margin-bottom: 14px;
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 20px;
   line-height: 28px;
   font-weight: 700;
