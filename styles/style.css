@@ -103,6 +103,16 @@ body {
   margin: 0 auto;
 }
 
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #dbdbdb;
+}
+
 .navigation-logo {
   width: 140px;
   margin-right: 100px;
@@ -130,6 +140,7 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   padding: 24px 20px;
   font-family: "PT Sans Narrow", sans-serif;
@@ -140,6 +151,16 @@ body {
   background-color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.navigation-link-login {
+  padding-left: 44px;
+}
+
+.navigation-link-login .navigation-icon {
+  right: auto;
+  left: 20px;
+  margin: auto 0;
 }
 
 .main-container {
@@ -247,6 +268,11 @@ body {
 
 .services-price {
   color: #AF7842;
+}
+
+.button-all {
+  padding-right: 44px;
+  background: #000000 url("../img/icons/arrow-right-white.svg") no-repeat center right 14px / 16px 16px;
 }
 
 .gallery {
@@ -437,6 +463,17 @@ body {
   margin-left: auto;
 }
 
+.page-footer-title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
@@ -457,15 +494,35 @@ body {
   margin-right: 0;
 }
 
-.page-footer-title {
-  margin-top: 0;
-  margin-bottom: 14px;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
+.footer-social-link {
+  display: block;
+  height: 44px;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.footer-social-tw {
+  background-image: url("../img/icons/social/twitter.svg");
+}
+
+.footer-social-vk {
+  background-image: url("../img/icons/social/vk.svg");
+}
+
+.footer-social-inst {
+  background-image: url("../img/icons/social/instagram.svg");
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-button {
+  width: 56px;
+  height: 44px;
+  background: #000000 url("../img/icons/arrow-tail-right-white.svg") no-repeat center / 16px 16px;
 }
 
 .page-footer .htmlacademy-link {
