@@ -68,6 +68,7 @@ body {
 
 .button {
   display: inline-block;
+  box-sizing: border-box;
   padding: 14px 20px;
   border: none;
   font-family: inherit;
@@ -155,6 +156,10 @@ body {
 
 .navigation-link-login {
   padding-left: 44px;
+}
+
+.navigation-link-profile > svg {
+  fill: #bdbdbd;
 }
 
 .navigation-link-login .navigation-icon {
@@ -596,6 +601,27 @@ body {
   margin-right: auto;
 }
 
+.card-grid-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 44px;
+  background-color: #000000;
+}
+
+.card-grid-toggle > svg {
+  fill: #ffffff;
+}
+
+.card-grid-toggle-current {
+  background-color: #ffffff;
+}
+
+.card-grid-toggle-current > svg {
+  fill: #000000;
+}
+
 .sorting-container .button {
   width: 56px;
   height: 44px;
@@ -710,4 +736,14 @@ body {
 .pagination-prev,
 .pagination-next {
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.pagination-prev {
+  background-image: url(../img/icons/arrow-left-white.svg);
+}
+.pagination-next {
+  background-image: url("../img/icons/arrow-right-white.svg");
 }
