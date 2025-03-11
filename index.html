@@ -24,7 +24,8 @@
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
+              xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M11 6.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm-.67 5.25a6.5 6.5 0 1 1 1.41-1.41l3.97 3.95-1.42 1.42-3.96-3.96Z" />
             </svg>
@@ -33,7 +34,8 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">
-            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
+              xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M3.09068 6L3.5759 0.90519L3.66211 0H4.5714H11.4285H12.3378L12.424 0.905191L12.9093 6H14.5H15.6328L15.4922 7.12403L14.4922 15.124L14.3828 16H13.5H2.49997H1.61719L1.50769 15.124L0.507692 7.12403L0.367188 6H1.49997H3.09068ZM5.09973 6H10.9002L10.5193 2H5.48068L5.09973 6ZM3.38275 14L2.63275 8H13.3672L12.6172 14H3.38275ZM8.49997 9.5V12.5H10.5V9.5H8.49997ZM5.49997 12.5L5.49997 9.5H7.49997L7.49997 12.5H5.49997Z" />
             </svg>
@@ -42,8 +44,10 @@
         </li>
         <li class="navigation-item">
           <a class="navigation-link navigation-link-login" href="#">
-            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2h5v12H9v2h7V0H9v2zM4.293 3.707L7.536 6.95H0v2h7.536l-3.243 3.242 1.414 1.415 4.95-4.95.707-.707-.707-.707-4.95-4.95-1.414 1.414z"/>
+            <svg class="navigation-icon" aria-hidden="true" focusable="false" width="16" height="16"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9 2h5v12H9v2h7V0H9v2zM4.293 3.707L7.536 6.95H0v2h7.536l-3.243 3.242 1.414 1.415 4.95-4.95.707-.707-.707-.707-4.95-4.95-1.414 1.414z" />
             </svg>
             Вход
           </a>
@@ -102,13 +106,17 @@
         </section>
         <section class="gallery">
           <h2 class="gallery-title">Фотогалерея</h2>
-          <img class="slider-image" src="img/gallery/gallery.jpg" width="390" height="250" alt="Примеры работ">
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
-          </button>
+          <div class="slider">
+            <img class="slider-image" src="img/gallery/gallery.jpg" width="390" height="250" alt="Примеры работ">
+            <div class="slider-wrapper">
+              <button class="slider-button slider-prev" type="button">
+                <span class="visually-hidden">Предыдущее фото</span>
+              </button>
+              <button class="slider-button slider-next" type="button">
+                <span class="visually-hidden">Следующее фото</span>
+              </button>
+            </div>
+          </div>
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
               <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -165,6 +173,7 @@
               <span class="form-label form-label-icon">
                 <label for="appointment-date">Дата</label>
                 <button class="info" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="" fill-rule="evenodd" d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12Zm1.3-8.7a1.3 1.3 0 1 1-2.6 0 1.3 1.3 0 0 1 2.6 0Zm0 2.2V11H6.7V7.5h2.6Z" clip-rule="evenodd"/></svg>
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
               </span>
@@ -174,17 +183,18 @@
               <span class="form-label form-label-icon">
                 <label for="appointment-time">Время</label>
                 <button class="info" type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path fill="" fill-rule="evenodd" d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12Zm1.3-8.7a1.3 1.3 0 1 1-2.6 0 1.3 1.3 0 0 1 2.6 0Zm0 2.2V11H6.7V7.5h2.6Z" clip-rule="evenodd"/></svg>
                   <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                 </button>
               </span>
               <input id="appointment-time" type="text" name="appointment-time" placeholder="10:10">
             </p>
             <p class="field-group appointment-form-phone">
-              <label for="appointment-phone">Телефон</label>
+              <label class="form-label" for="appointment-phone">Телефон</label>
               <input id="appointment-phone" type="text" name="appointment-phone" placeholder="+7 800 000-00-00">
             </p>
             <p class="field-group appointment-form-name">
-              <label for="appointment-name">Ваше имя</label>
+              <label class="form-label" for="appointment-name">Ваше имя</label>
               <input id="appointment-name" type="text" name="appointment-name">
             </p>
             <button class="button appointment-submit" type="submit">Записаться</button>

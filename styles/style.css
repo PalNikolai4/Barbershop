@@ -371,6 +371,7 @@ body {
 }
 
 .gallery {
+
   width: 390px;
 }
 
@@ -382,6 +383,89 @@ body {
   font-weight: 700;
   line-height: 35px;
   text-transform: uppercase;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-image {
+  display: block;
+}
+
+.slider-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-button {
+  border: none;
+  padding: 0;
+  width: 48px;
+  height: 60px;
+  background: #000000 url("../img/icons/arrow-left-white.svg") no-repeat center center;
+  color: #FFFFFF;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.slider-button:hover {
+  background-color: #814B18;
+}
+
+.slider-button:focus {
+  outline: none;
+  background-color: #814B18;
+  border-color: #DBB590;
+}
+
+.slider-next {
+  transform: rotate(180deg);
+}
+
+.slider-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.slider-pagination-item {
+  line-height: 0;
+}
+
+.slider-pagination-item:not(:last-of-type) {
+  margin-right: 8px;
+}
+
+.slider-pagination-button {
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #BDBDBD;
+  cursor: pointer;
+}
+
+.slider-pagination-button:hover {
+  background-color: #AF7842;
+}
+
+.slider-pagination-button:focus {
+  background-color: #DBB590;
+  outline: none;
+}
+
+.slider-pagination-button-current {
+  background-color: #242424;
 }
 
 .contacts {
@@ -491,9 +575,41 @@ body {
 }
 
 .form-label {
-  font-size: 16px;
+  margin-bottom: 8px;
   line-height: 22px;
+  font-weight: 700;
   text-transform: uppercase;
+}
+
+.form-label-icon {
+  position: relative;
+  padding-right: 16px;
+}
+
+.info {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-top: 3px;
+  margin-left: 4px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.info:hover,
+.info:focus {
+  outline: none;
+}
+
+.info:focus > svg,
+.info:hover > svg {
+  fill: #814B18;
+}
+
+.info:active > svg {
+  fill: #AF7842;
 }
 
 .appointment-form-name {
