@@ -94,7 +94,6 @@ body {
 
 .button:hover,
 .footer-social-link:hover,
-.card-grid-toggle:hover,
 .pagination-link:not(.pagination-disabled):hover {
   background-color: #814B18;
 }
@@ -1042,7 +1041,31 @@ body {
 }
 
 .sorting-type {
+  display: flex;
+  width: 260px;
   margin-right: auto;
+}
+
+.select-control {
+  position: relative;
+  width: 100%;
+  padding: 10px 14px;
+  padding-right: 40px;
+  border: 2px solid #242424;
+  font: inherit;
+  font-weight: 700;
+  line-height: 1.5;
+  background: #FFFFFF url("../img/icons/arrow-down.svg") no-repeat center right 18px;
+  appearance: none;
+}
+
+.select-control:hover {
+  border-color: #AF7842;
+}
+
+.select-control:focus {
+  border-color: #AF7842;
+  outline: 2px solid #DBB590;
 }
 
 .card-grid-toggle {
@@ -1054,18 +1077,34 @@ body {
   background-color: #000000;
 }
 
-.card-grid-toggle>svg,
-.card-grid-toggle:focus>svg,
-.card-grid-toggle:hover>svg {
-  fill: #ffffff;
+.card-grid-toggle svg {
+  fill: #FFFFFF;
+}
+
+.card-grid-toggle:hover {
+  background-color: #814B18;
+}
+
+.card-grid-toggle:focus {
+  background-color: #814B18;
+  outline: 2px solid #DBB590;
 }
 
 .card-grid-toggle-current {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
-.card-grid-toggle-current>svg {
+.card-grid-toggle-current:hover {
+  background-color: #000000;
+}
+
+.card-grid-toggle-current svg {
   fill: #000000;
+}
+
+.card-grid-toggle-current:hover svg,
+.card-grid-toggle-current:focus svg {
+  fill: #FFFFFF;
 }
 
 .sorting-container .button {
