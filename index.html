@@ -54,7 +54,8 @@
                   <p class="cart-item-price">800 ₽</p>
                   <button type="button" class="button cart-item-button">
                     <svg width="16" height="16" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="m3 6 .6-5V0h8.8v1l.5 5h2.7l-.1 1.1-1 8-.1.9H1.6v-.9l-1-8L.3 6H3Zm2.1 0h5.8l-.4-4h-5L5 6Zm-1.7 8-.8-6h10.8l-.8 6H3.4Zm5.1-4.5v3h2v-3h-2Zm-3 3v-3h2v3h-2Z" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="m3 6 .6-5V0h8.8v1l.5 5h2.7l-.1 1.1-1 8-.1.9H1.6v-.9l-1-8L.3 6H3Zm2.1 0h5.8l-.4-4h-5L5 6Zm-1.7 8-.8-6h10.8l-.8 6H3.4Zm5.1-4.5v3h2v-3h-2Zm-3 3v-3h2v3h-2Z" />
                     </svg>
                     <span class="visually-hidden">Удалить из корзины</span>
                   </button>
@@ -281,6 +282,36 @@
       </section>
     </div>
   </footer>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-auth">
+      <button class="button modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <div class="modal-content">
+        <h2 class="modal-title">Личный кабинет</h2>
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="field-group">
+            <label class="visually-hidden" for="auth-login">Логин</label>
+            <input class="field auth-form-field" type="text" name="auth-login" id="auth-login" placeholder="Логин">
+          </p>
+          <p class="field-group">
+            <label class="visually-hidden" for="auth-password">Пароль</label>
+            <input class="field auth-form-field" type="password" name="auth-password" id="auth-password" placeholder="Пароль">
+          </p>
+          <p class="field-group auth-form-user-options">
+            <label class="control auth-form-checkbox">
+              <input class="visually-hidden control-input" type="checkbox" name="firm-store">
+              <span class="control-mark"></span>
+              <span class="control-label">Запомнить меня</span>
+            </label>
+            <a class="auth-form-recovery" href="">Забыл пароль</a>
+          </p>
+          <button class="button auth-form-button" type="submit">Войти</button>
+          <a href="" class="button auth-form-register">Регистрация</a>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
